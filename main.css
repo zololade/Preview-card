@@ -159,6 +159,14 @@ h6 {
 }
 
 @media screen and (min-width: 375px) {
+
+    .header,
+    .header__caption,
+    .main__paragraph,
+    .main__pricetag {
+        margin: 0;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -167,25 +175,18 @@ h6 {
 
     .main {
         padding: clamp(1rem, calc(1rem + 0.5vw), 1.875rem);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
+    .picture-element,
     .picture-frame {
-        margin-bottom: 0rem;
-        width: 100%;
         height: 100%;
     }
 
     .picture-element img {
+        max-width: 100%;
         height: 100%;
         object-fit: cover;
-    }
-
-    .header__caption,
-    .main__paragraph,
-    .main__pricetag {
-        margin: 0;
     }
 }
