@@ -170,13 +170,15 @@ h6 {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-height: 19.25rem;
         max-width: clamp(22.5rem, calc(22.5rem + 7vw), 28.4375rem);
     }
 
     .main {
         padding: clamp(1rem, calc(1rem + 0.5vw), 1.875rem);
-        /* display: grid;
-        grid-template-columns: 1fr; */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 
     .picture-element,
