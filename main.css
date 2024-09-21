@@ -79,6 +79,10 @@ h6 {
     text-wrap: nowrap;
 }
 
+.main {
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
 .main__paragraph {
     margin: 1rem 0rem;
 }
@@ -133,19 +137,6 @@ h6 {
     height: auto;
 }
 
-@media screen and (max-width: 375px) {
-
-
-
-    .main__btn {
-        padding: 0.75rem 0rem;
-    }
-
-    .main {
-        padding: 0rem 1.5rem 1.5rem 1.5rem;
-    }
-}
-
 @media screen and (min-width: 375px) {
 
     .header,
@@ -159,7 +150,7 @@ h6 {
     .main__btn,
     .pricetag__h3,
     .header__caption {
-        font-size: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.75rem);
+        font-size: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.73rem);
     }
 
     .main__h1,
@@ -170,14 +161,14 @@ h6 {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-height: 19.25rem;
-        max-width: clamp(22.5rem, calc(22.5rem + 7vw), 28.4375rem);
+        max-width: clamp(22.5rem, calc(22.5rem + 7vw), 28.5rem);
     }
 
     .main {
-        padding: clamp(1rem, calc(1rem + 0.5vw), 1.875rem);
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0.75rem;
+        height: 100%;
+        padding: clamp(1rem, calc(1rem + 0.5vw), 1.25rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
