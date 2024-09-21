@@ -50,7 +50,7 @@ h6 {
     overflow: hidden;
 }
 
-.header { 
+.header {
     margin-bottom: 1rem;
 }
 
@@ -88,8 +88,12 @@ h6 {
 .main__pricetag {
     margin-bottom: 1rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
+}
+
+.pricetag__h2,
+.pricetag__h3 {
+    display: inline;
 }
 
 .pricetag__h2 {
