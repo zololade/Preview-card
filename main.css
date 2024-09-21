@@ -1,0 +1,189 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+/* reset */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+/* general style */
+body {
+    font-family: "Montserrat", serif;
+    min-height: 100vh;
+    padding: 1rem 0.75rem;
+    font-size: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.75rem);
+    line-height: 1.5;
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    font-weight: 500;
+    place-content: center;
+    color: hsl(228, 12%, 48%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+/* shared style */
+
+/* main styles */
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.picture-frame {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.picture-element img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.header__caption {
+    font-size: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.75rem);
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    margin-bottom: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+.main__h1 {
+    color: hsl(212, 21%, 14%);
+    font-weight: 900;
+    font-size: clamp(0.875rem, calc(0.875rem + 0.5vw), 1.5rem);
+    word-spacing: 0.25rem;
+    line-height: 0.9;
+}
+
+.text-nowrap {
+    text-wrap: nowrap;
+}
+
+.main__paragraph {
+    margin: 1rem 0rem;
+}
+
+.main__pricetag {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pricetag__h2 {
+    color: hsl(158, 36%, 37%);
+    font-weight: 900;
+    font-size: clamp(0.875rem, calc(0.875rem + 0.5vw), 1.5rem);
+}
+
+.pricetag__h3 {
+    padding-left: 1rem;
+    font-size: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.75rem);
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+
+.main__btn {
+    width: 100%;
+    padding: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.75rem) 0rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.75rem);
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+}
+
+.main__btn:hover,
+.main__btn:focus {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.cart {
+    display: inline-block;
+    padding: 0rem 0.5rem;
+}
+
+.cart-img {
+    width: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.75rem);
+    height: auto;
+}
+
+@media (max-width: 375px) {
+
+    body,
+    .main__btn,
+    .pricetag__h3,
+    .header__caption {
+        font-size: clamp(0.5rem, calc(0.5rem + 1vw), 0.75rem);
+    }
+
+    .main__h1,
+    .pricetag__h2 {
+        font-size: clamp(0.75rem, calc(1rem + 3vw), 1.65rem);
+    }
+
+    .main__btn {
+        padding: 0.75rem 0rem;
+    }
+
+    .main {
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        max-width: clamp(22.5rem, calc(22.5rem + 7vw), 28.4375rem);
+    }
+
+    .main {
+        padding: clamp(1rem, calc(1rem + 0.5vw), 1.875rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .picture-frame {
+        margin-bottom: 0rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .picture-element img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .header__caption,
+    .main__paragraph,
+    .main__pricetag {
+        margin: 0;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product preview card component" />
+    <meta name="author" content="Akingbogun Ololade" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <figure class="picture-frame">
+          <picture class="picture-element">
+            <source
+              media="(min-width: 375px)"
+              srcset="./images/image-product-desktop.jpg"
+            />
+            <img src="./images/image-product-mobile.jpg" alt="product sample" />
+          </picture>
+        </figure>
+      </header>
+
+      <main class="main">
+        <h4 class="header__caption">Perfume</h4>
+        <h1 class="main__h1">
+          Gabrielle Essence Eau <span class="text-nowrap">De Parfum</span>
+        </h1>
+        <p class="main__paragraph">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <section class="main__pricetag">
+          <h2 class="pricetag__h2">$149.99</h2>
+          <h3 class="pricetag__h3"><del>$169.99</del></h3>
+        </section>
+        <button type="button" class="main__btn">
+          <span class="cart"
+            ><img
+              src="./images/icon-cart.svg"
+              alt="cart"
+              class="cart-img" /></span
+          >Add to Cart
+        </button>
+      </main>
+    </div>
+  </body>
+</html>
