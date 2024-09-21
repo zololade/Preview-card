@@ -175,8 +175,8 @@ h6 {
 
     .main {
         padding: clamp(1rem, calc(1rem + 0.5vw), 1.875rem);
-        display: grid;
-        grid-template-columns: 1fr;
+        /* display: grid;
+        grid-template-columns: 1fr; */
     }
 
     .picture-element,
