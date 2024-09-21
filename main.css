@@ -46,14 +46,11 @@ h6 {
 /* main styles */
 .container {
     background-color: hsl(0, 0%, 100%);
-    display: grid;
-    grid-template-columns: auto;
     border-radius: 0.5rem;
     overflow: hidden;
 }
 
-.picture-frame {
-    width: 100%;
+.header { 
     margin-bottom: 1rem;
 }
 
@@ -159,6 +156,7 @@ h6 {
 
 @media screen and (min-width: 375px) {
     .container {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: clamp(22.5rem, calc(22.5rem + 7vw), 28.4375rem);
     }
